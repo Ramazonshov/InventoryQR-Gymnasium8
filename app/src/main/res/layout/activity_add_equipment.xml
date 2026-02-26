@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить оборудование"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Наименование (например, Компьютер Lenovo)"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etInvNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Инвентарный номер (например, INV-2026-001)"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Модель"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etCabinet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Кабинет / местонахождение"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить и сгенерировать QR"
+            android:textSize="18sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
